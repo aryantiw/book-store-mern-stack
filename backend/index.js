@@ -16,13 +16,13 @@ app.use(express.json());
 
 //option2: allow custom origins
 
-// app.use(
-//     cors({
-//         origin: 'http://localhost:3000',
-//         methods: ['GET', 'PUT', 'POST', 'DELETE'],
-//         allowedHeaders: ['Content-Type'],
-//     })
-// );
+app.use(
+    cors({
+        origin: 'http://localhost:3000',
+        methods: ['GET', 'PUT', 'POST', 'DELETE'],
+        allowedHeaders: ['Content-Type'],
+    })
+);
 
 
 
